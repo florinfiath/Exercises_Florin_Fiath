@@ -1,0 +1,47 @@
+ul li {
+  color: red;
+  list-style-type: circle;
+}
+
+ol li {
+  color: blue;
+  list-style-type: lower-greek;
+  
+  
+}
+
+div h2 {
+  color: coral;
+}
+
+h2 {
+  color: darkgoldenrod;
+}
+
+.one {
+  color: darkseagreen;
+  background-color: yellow;
+}
+
+.two {
+  color: black;
+  font: bold;
+  font-size: 25px;
+  
+  ;
+}
+
+.style2 li {
+    list-style-type: lower-greek;
+    list-style-type: square;
+    
+    image;
+
+
+}
+
+.style3 li {
+    list-style-type: disc;
+    list-style-type: upper-roman;
+}
+
