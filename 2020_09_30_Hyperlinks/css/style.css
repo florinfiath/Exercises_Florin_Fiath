@@ -1,0 +1,17 @@
+a:hover{
+    color: red;
+}
+a:visited {
+    color: blue#;
+}
+
+body {
+    background-color: #A3C8FF;
+}
+
+img {
+    border: 10px;
+    border-style: ridge;
+    border-color:blue;
+    
+}
