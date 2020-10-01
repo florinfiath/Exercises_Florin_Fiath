@@ -109,14 +109,11 @@ span {
   background-color: blue;
 }
 
-.section:nth-of-type(2):hover {
-  background-color: yellow;
-}
 
-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+header {
   background-image: url(/pictures/northern-light-2387777_1920.jpg);
-  background-size: 1500px 250px;
+  background-size: 1806px 205px;
+border: 1px solid blue;
+
+
 }
