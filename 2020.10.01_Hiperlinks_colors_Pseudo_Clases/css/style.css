@@ -1,0 +1,122 @@
+a:hover {
+  color: red;
+}
+a:visited {
+  color: ;
+}
+
+body {
+  background-color: #a3c8ff;
+}
+
+img {
+  border: 10px;
+  border-style: ridge;
+  border-color: blue;
+}
+
+#kingdom {
+  color: #a17065;
+}
+
+#etymology {
+  color: #ad8600;
+}
+
+#history {
+  color: #694d7a;
+}
+
+#geography {
+  color: #5ead86;
+}
+
+#climate {
+  color: #2506ad;
+}
+strong:hover {
+  color: springgreen;
+}
+
+.color-hover:hover {
+  color: red;
+}
+.color-hover:active {
+  color: blue;
+}
+span {
+  color: red;
+  font-size: 20px;
+}
+
+#kingdom:hover {
+  color: orange;
+}
+#kingdom:active {
+  color: rgba(92, 115, 141, 0.445);
+}
+
+.square1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  background-color: red;
+}
+
+.square2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+
+.square3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+}
+.border {
+  border: 8px ridge grey;
+}
+.square1:hover {
+  background-color: black;
+  z-index: auto;
+}
+
+.square1:active {
+  background-color: red;
+}
+.square2:hover {
+  background-color: yellow;
+}
+
+.square2:active {
+  background-color: white;
+}
+
+.square3:hover {
+  background-color: rgba(0, 0, 0);
+}
+
+.square3:active {
+  background-color: blue;
+}
+
+.section:nth-of-type(2):hover {
+  background-color: yellow;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(/pictures/northern-light-2387777_1920.jpg);
+  background-size: 1500px 250px;
+}
