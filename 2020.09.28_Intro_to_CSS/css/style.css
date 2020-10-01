@@ -1,0 +1,29 @@
+
+
+/* 5. Using the universal selector, modify the HTML page. */
+* {
+    background-color: aquamarine;
+}
+
+#id-selector{
+color: green;
+background-color: yellow;
+font-size: 20px;
+}
+
+.class-selector {
+    color: darkslateblue ;
+background-color: chartreuse;
+
+}
+
+#id-selector-1 {
+    font-size: 30px;
+}
+
+.class-selector-1 {
+color: firebrick;
+/* ID selector has priority , so font size will remain 30px */
+font-size: 10px;
+
+}
