@@ -32,9 +32,7 @@ div {
     font-size:20px;
     background-size:550px;
     background-color: aquamarine;
-    
-
-}
+    }
 
 p {
 font-size: 16px;
@@ -49,8 +47,22 @@ width: 100vw;
 
 }
 
-div {
+.part1{
     height:550px;
     width: 1200px;
     background-color: coral;
+}
+
+.part2{
+    background-color: darkcyan;
+}
+
+.AbsU_1 {
+    font-size: 0.5cm;
+    background-color: darksalmon;
+}
+
+.AbsU_2 {
+    font-size: 0.5in;
+    background-color: darkgrey;
 }
