@@ -1,0 +1,56 @@
+
+/* ? Relative units  */
+
+/* .units {
+    font-size: 1.20rem;
+    background-size: vh;
+    background-color: aquamarine;
+    }
+
+p {
+font-size: 1.1rem;
+background-color: bisque;
+
+}
+
+span{
+font-size: 0.9em;
+background-color: cornsilk;
+width: 100vw;
+
+}
+
+div {
+    height: 100vh;
+    background-color: coral;
+} */
+
+/* ? Absolute Units  */
+
+
+.units {
+    font-size:20px;
+    background-size:550px;
+    background-color: aquamarine;
+    
+
+}
+
+p {
+font-size: 16px;
+background-color: bisque;
+
+}
+
+span{
+font-size: 10px;
+background-color: cornsilk;
+width: 100vw;
+
+}
+
+div {
+    height:550px;
+    width: 1200px;
+    background-color: coral;
+}
