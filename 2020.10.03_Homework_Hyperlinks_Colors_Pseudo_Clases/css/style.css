@@ -13,13 +13,14 @@ left: 0;
 right: 0;
 text-align: center;
 
+
 }
 
 
 .top a {
 color: aliceblue;
 text-decoration: none;
-font-size: 16px;
+font-size: 20px;
 }
 
 .top a:hover {
@@ -27,15 +28,21 @@ background-color: #ddd;
 color: black;
 }
 
-
-.headline {
-margin-top: 1.6em;
+.first-div{
+  margin-top: 1.6em;
 margin-bottom: 0%;
 padding-bottom: 0%;
-padding-top:0.85em ;
+padding-top:0.85em 
 }
 
-h2 {
+.second-div{
+  margin-top: 1.6em;
+margin-bottom: 0%;
+padding-bottom: 0%;
+padding-top:0.85em 
+}
+
+h2,span {
   color: red;
 }
 h3{
@@ -63,3 +70,25 @@ text-decoration: none;
 font-size: 20px;
 }
 
+span:nth-child(odd){
+  color: purple;
+}
+
+span:nth-child(18){
+  color: yellow;
+}
+
+span:nth-child(30){
+  color:rgb(0, 0, 0,0.5)
+}
+span:nth-child(even):hover{
+  color:brown;
+  font-size: larger;
+}
+
+span:nth-of-type(3n+3) {
+    color: pink;
+}
+span:nth-of-type(6n+6) {
+    color: orange
+}
