@@ -1,0 +1,40 @@
+span:nth-of-type(odd){
+    color:purple
+}
+span:nth-of-type(18){
+    color:goldenrod;
+}
+
+span:last-of-type{
+    color: black;
+}
+
+span:nth-of-type(2n):hover {
+    color: peru;
+    font-size: large;
+}
+
+/* span:nth-of-type(3n):not(nth-of-type(odd)){
+    color: orange; */
+
+    span:nth-last-of-type(6n):not(:nth-of-type(18)){
+        color:orange ;
+    }
+
+span:nth-of-type(3n):nth-last-of-type(odd){
+    color: pink;
+}
+
+/* span:nth-of-type(5n):nth-last-of-type(3n):hover{
+    color: green;
+    font-weight: bolder;
+    opacity: 0.4;
+} */
+
+span:nth-of-type(15n):hover{
+    color: green;
+    font-weight: bolder;
+    opacity: 0.4;
+}
+
+
