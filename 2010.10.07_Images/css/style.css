@@ -1,0 +1,29 @@
+img {
+  border: 10px;
+  border-color: grey;
+  border-style: ridge;
+  border-radius: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+main{
+    display: grid;
+}
+
+.work-tools{
+  background-color:beige;
+  text-align:center;
+ }
+
+.language{
+  background-color: aquamarine;
+  text-align: center;
+ }
+
+ .communication{
+  background-color: cornsilk;
+  text-align: center;
+  
+ }
