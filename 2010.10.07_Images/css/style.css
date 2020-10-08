@@ -15,7 +15,26 @@ main{
 .work-tools{
   background-color:beige;
   text-align:center;
+  position: relative;
  }
+
+ .work-tools-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  font-size: 30px;
+}
+ 
+.work-tools:hover .work-tools-overlay{
+  opacity: 1;
+  
+}
 
 .language{
   background-color: aquamarine;
