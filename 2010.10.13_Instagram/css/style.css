@@ -65,7 +65,7 @@ height: 100px;
 
 }
 
-.line-1{
+.line{
  display: flex;
 align-items:center;
 justify-content: space-around;
@@ -73,13 +73,7 @@ position: relative;
 width: 1100px;
 }
 
-.line-2{
-display: flex;
-align-items:center;
-justify-content: space-around;
-position: relative;
-width: 1100px;
-}
+
 
 .media{
 display: flex;
@@ -100,6 +94,11 @@ flex-wrap: wrap;
 border:3px solid black;
 opacity: 1;
 transform: scale(1.2);
+}
+
+.stories img{
+  border-radius: 50%;
+
 }
 
 
