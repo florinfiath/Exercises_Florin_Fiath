@@ -1,0 +1,26 @@
+.square {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-around; 
+   flex-wrap: wrap;
+   
+}
+
+.red{
+    background-color: red;
+}
+
+section :nth-child(even):not(.red):not(.purple){
+background-color: grey;
+}
+
+div.purple {
+    background-color: purple;
+}
