@@ -1,0 +1,22 @@
+.serif{
+font-family: 'Merriweather', serif;
+}
+.sans-serif{
+font-family: 'Roboto', sans-serif;
+}
+
+.script{
+    font-family: 'Dancing Script', cursive;
+}
+
+.monospace {
+font-family: 'Space Mono', monospace;
+}
+
+.display {
+  font-family: 'Sansita Swashed', cursive;
+}
+
+section {
+  margin: 60px 0;
+}
