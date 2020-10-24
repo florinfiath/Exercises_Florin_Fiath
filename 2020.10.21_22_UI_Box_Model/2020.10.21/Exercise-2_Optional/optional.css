@@ -1,0 +1,46 @@
+.background-color-grey {
+    background-color:lightgrey;
+}
+.background-color-white {
+background-color: white;
+}
+.background-color-green {
+background-color: green;
+}
+.box {
+width: 90%;
+margin: 0 auto;
+text-align: center;
+padding: 20px 0;
+}
+
+.box:not(.content){
+padding:1px 20px 20px 20px;
+}
+.inner-box {
+height: 70px;
+line-height: 70px;
+}
+.box.content{
+    height: 60px;
+    line-height: 60px;
+}
+
+.border-dashed {
+border: 2px dashed grey;
+}
+main {
+    margin:40px 0;
+}
+header {
+    border-bottom: solid 1px grey;
+}
+
+header > .header-menu {
+    float: right;
+}
+
+footer {
+    background-color:black;
+    color: white;
+}
