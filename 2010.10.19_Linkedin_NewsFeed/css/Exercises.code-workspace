@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../2010.10.13_Instagram"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "2010.10.19_Linkedin_NewsFeed"
+  }
+}

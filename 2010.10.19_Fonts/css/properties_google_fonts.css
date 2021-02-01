@@ -1,0 +1,46 @@
+* {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+}
+body{
+    font-family: Roboto;
+    font-display: swap;
+}
+
+.heading {
+font-family: 'Poppins', sans-serif;
+color:navy;
+font-size: 22px;
+font-display: swap;
+}
+
+.text {
+    color:black ;
+    /* font-weight: 800; */
+    letter-spacing:0.2px;
+    line-height: 24px;
+}
+
+footer {
+    margin: 40px 0px;
+}
+
+.footer-text {
+font-size: 12px;
+}
+
+.font-style{
+  font-style: italic;  
+}
+.text-decoration{
+    text-decoration:underline overline dashed;
+}
+.text-align{
+    text-align:center ;
+}
+.text-transform{
+text-transform: capitalize;
+}
+.direction{
+direction: ltr;
+}

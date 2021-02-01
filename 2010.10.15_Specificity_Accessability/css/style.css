@@ -2,7 +2,7 @@
     height: 200px;
     width: 200px;
     background-color: black;
-    
+    font: 10px;
 }
 
 .flex{
@@ -23,4 +23,39 @@ background-color: grey;
 
 div.purple {
     background-color: purple;
+}
+
+/* Optional Exercise */
+
+.main_section{
+    display: inline-table;
+  width: 100%;
+  
+}
+
+.row1{
+    display: flex;
+background-color:#ffbf00;
+    width: 1900px;;
+    height: 300px;
+    padding: 16px;
+
+}
+
+row2{
+    display: flex;
+    background-color: #bfff00;
+    width: 1900px;
+    height: 300px;
+    padding: 16px;
+
+}
+
+row3{
+    display: flex;
+ 
+   
+    background-color:	#ff0000 ;
+    width: 1900px;;
+    height: 300px;
 }

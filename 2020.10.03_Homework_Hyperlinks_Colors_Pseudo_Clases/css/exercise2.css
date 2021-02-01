@@ -2,7 +2,7 @@ span:nth-of-type(odd){
     color:purple
 }
 span:nth-of-type(18){
-    color:goldenrod;
+    color: darkslategrey;
 }
 
 span:last-of-type{
@@ -18,7 +18,7 @@ span:nth-of-type(2n):hover {
     color: orange; */
 
     span:nth-last-of-type(6n):not(:nth-of-type(18)){
-        color:orange ;
+        color:orange
     }
 
 span:nth-of-type(3n):nth-last-of-type(odd){

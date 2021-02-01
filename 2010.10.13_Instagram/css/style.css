@@ -17,7 +17,7 @@ form.search input[type=text] {
   border: 1px solid grey;
   background: #f1f1f1;
 }
-form.search::after {
+form.search:after {
   content: "";
   clear: both;
   display: table;
