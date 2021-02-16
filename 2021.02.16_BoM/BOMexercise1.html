@@ -1,0 +1,57 @@
+<!-- 1- Write a simple JavaScript function that takes a pair of username and password (window.prompt) from a user (e.g., username=admin, password=123),
+
+2- if that was correct shows a welcome message, otherwise shows a warning message
+
+3- Then when the username or password was wrong shows a message box asking  "are you willing to enter a new username or password?""  (window.confirm)  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Exercise</title>
+</head>
+<body>
+    
+    <h2>Check Email</h2>
+
+<button onclick="emailCheck()">check</button>
+
+
+
+    <script>
+
+  function emailCheck(){
+  
+      var emailUser = window.prompt("Please enter your username:");
+      var emailPass = window.prompt ("Please enter your password:");
+
+      if ( emailUser == "John" && emailPass == "123"){
+
+      alert("Welcome!");
+
+      }else{
+
+          alert("User or password incorrect");
+
+          if(window.confirm("are you willing to enter the username or password?")){
+
+              emailUser = window.prompt("Please enter your username:");
+              emailPass = window.prompt("Please enter your password:");
+              if (emailUser =="John" && emailPass =="123")
+              alert("Welcome!")
+          }
+          else{
+              alert("User or pass are wrong again")
+          }
+      }
+       
+  
+    }
+
+    </script>
+
+
+</body>
+</html>
