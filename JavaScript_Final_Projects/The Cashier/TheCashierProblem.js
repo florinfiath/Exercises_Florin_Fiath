@@ -1,99 +1,66 @@
-
-
-
-function checkChange(cash, price) {
-   var change = cash - price;
-    if (cash<price){
-      console.log("Your money is not enough");
-     return false;
-    }else if (cash==price){
-      console.log("Thanks for your payment");
-      return true;
-    } 
-    
-
- var twentyEuro = 20;
- var twentyEuroCounter = 0;
- var result = 0;
-
- if (change >= twentyEuro) {
-   twentyEuroCounter = change / 20;
-   twentyEuroCounter = ~~ twentyEuroCounter; // ~~ => cuts all fractional digits
-   result = change % 20;
- }
-  console.log("The output is "+ twentyEuroCounter +  " twenty euro, remaining "+result);
    
-  
-  var fiveEuro = 5;
-  var fiveEuroCounter = 0;
-  var result = 0;
-
-
-  if (change >= fiveEuro) {
    
-    fiveEuroCounter = change / 5; 
-    fiveEuroCounter = ~~ fiveEuroCounter; 
-    result = change % 5;
-  }
-  console.log(
-    "The output is " + fiveEuroCounter + " five euro, remaining " + result
-  );
+   function checkChange(price, cash) {
+     var moneyArray = [];
+     let twentyEuroCounter = 0;
+     let fiveEuroCounter = 0;
+     let oneEuroCounter = 0;
+     let twentyEuroCentsCounter = 0;
+     let fiveEuroCentsCounter = 0;
 
-  var oneEuro = 1;
-  var oneEuroCounter = 0;
-  var result = 0;
+     if (price > cash) {
+       console.log("You need more money");
+       return;
+     } else if (cash == price) {
+       console.log("Thanks for your payment");
+       return;
+     } else if (price < cash) {
+       let change = cash - price;
+       console.log(`The change is ${change} Euro`);
 
+       while (change >= 20) {
+         change -= 20;
+         twentyEuroCounter++;
+       }
+       if (twentyEuroCounter > 0) {
+         moneyArray.push(`${twentyEuroCounter} x twenty Euro`);
+       }
+       while (change >= 5) {
+         change -= 5;
+         fiveEuroCounter++;
+       }
+       if (fiveEuroCounter > 0) {
+         moneyArray.push(`${fiveEuroCounter} x five Euro`);
+       }
 
+       while (change >= 1) {
+         change -= 1;
+         oneEuroCounter++;
+       }
+       if (oneEuroCounter > 0) {
+         moneyArray.push(`${oneEuroCounter} x one Euro`);
+       }
 
-  if (change >= oneEuro) {
-  
-    oneEuroCounter = change / 1; 
-    oneEuroCounter = ~~ oneEuroCounter; 
-    result = change % 1; 
-  }
-  console.log(
-    "The output is " + oneEuroCounter + " one euro, remaining " + result
-  );
+       while (change >= 0.2) {
+         change -= 0.2;
+         twentyEuroCentsCounter++;
+       }
+       if (twentyEuroCentsCounter > 0) {
+         moneyArray.push(`${twentyEuroCentsCounter} x twenty Euro Cents`);
+       }
+       while (change >= 0.05) {
+         change -= 0.05;
+         fiveEuroCentsCounter++;
+       }
+       if (fiveEuroCentsCounter > 0) {
+         moneyArray.push(`${fiveEuroCentsCounter} x five Euro Cents`);
+       }
+       for (let i = 0; i < moneyArray.length; i++) {
+         console.log(moneyArray[i]);
+       }
+     }
+   }
 
- var twentyCents = 0.2;
- var twentyCentsCounter = 0;
- var result = 0;
+   checkChange(35, 48);
 
-
-  if (change >= twentyCents) {
-    
-    twentyCentsCounter = change / 0.2; 
-    twentyCentsCounter = ~~ twentyCentsCounter; 
-    result = change % 0.2;
-  }
-  console.log(
-    "The output is " + twentyCentsCounter + " twenty euro Cents, remaining " + result
-  );
-
- var fiveCents = 0.05;
- var fiveCentsCounter = 0;
- var result = 0;
-
-  if (change >= fiveCents) {
    
-    fiveCentsCounter = change / 0.05; 
-    fiveCentsCounter = ~~ fiveCentsCounter;
-    result = change % 0.05;
-  }
-  console.log(
-    "The output is " + fiveCentsCounter + " five euro Cents, remaining " + result
-  );
-    
-}
-
-
-checkChange(66,44)
-
-// Output :
-
-// The output is 1 twenty euro, remaining 2
-// The output is 4 five euro, remaining 2
-// The output is 22 One euro, remaining 0
-// The output is 110 twenty euro Cents, remaining 0.1999999999999988
-// The output is 440 five euro Cents, remaining 0.04999999999999878
-
