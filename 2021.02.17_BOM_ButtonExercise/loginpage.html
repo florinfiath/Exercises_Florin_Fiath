@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Login Page</title>
+</head>
+<body>
+    
+  <div class="row align-items-center">
+  <div class="form-group w-25 p-4">
+    <label for="exampleInputUser">User Name</label>
+    <input type="text" class="form-control" id="user" aria-describedby="userHelp" placeholder="User">
+
+  </div>
+  <div class="form-group w-25 p-4">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+ 
+  <button type="button" class="btn btn-primary " onclick="submitInformation()">Submit</button>
+  
+  </div>
+
+
+
+<script>
+
+
+function submitInformation(){
+
+  var userName = document.getElementById("user").value;
+  var userPass = document.getElementById("password").value;
+
+      if(userName =="admin" && userPass == "123456"){
+         window.open("http://127.0.0.1:5500/2021.02.16_Browser%20Window%20Model(BOM)/welcomepage.html","WelcomePage",'width=700,height=300')
+      } else {
+         
+          window.open("http://127.0.0.1:5500/2021.02.16_Browser%20Window%20Model(BOM)/falseloginPage.html","ErrorPage",'width=900,height=400')
+}
+}
+
+
+
+</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    
+</body>
+</html> 

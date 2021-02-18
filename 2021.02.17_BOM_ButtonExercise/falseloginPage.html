@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>False login Page</title>
+</head>
+<body>
+    
+    <h3>
+      You are not allowed to enter the user panel,now we collect your browser information and report to our IT security department!  
+    </h3>
+ <button type="button" onclick="getBrowserInformation();">Get Browser Information</button>
+
+
+
+<script>
+
+    function getBrowserInformation() {
+        var info = "\n App Name: " + navigator.appName;
+           info += "\n App Version: " + navigator.appVersion;
+           info += "\n App Code Name: " + navigator.appCodeName;
+           info += "\n User Agent: " + navigator.userAgent;
+           info += "\n Platform: " + navigator.platform;
+    
+        alert("Here're the information related to your browser: " + info);
+    }
+</script>
+
+
+</body>
+</html>
