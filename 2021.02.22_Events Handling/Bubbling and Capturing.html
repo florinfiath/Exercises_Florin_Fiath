@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubbling and Capturing</title>
+  </head>
+  <body>
+
+    <section id="one_a"><h2>This is #one_a section</h2>
+      <div id="two">This is the "Two" div
+        <p id="three_a">This is #three_a paragraph
+          <button id="buttonOne">This is button One</button>
+        </p>
+
+        <p id="three_b">This is #three_b paragraph
+          <button id="buttonTwo">This is button Two</button>
+
+          <button id="buttonThree">This is button Three</button>
+        </p>
+      </div>
+    </section>
+
+    <section id="one_b"><h2>This is #one_b section</h2></section>
+  </body>
+
+
+
+<script>
+
+let buttonOne = document.getElementById("buttonOne");
+let three_a = document.getElementById("three_a");
+let buttonTwo = document.getElementById("buttonTwo");
+let three_b = document.getElementById("three_b");
+
+
+
+buttonOne.addEventListener("click",clickButtonOne,true);
+three_a.addEventListener("click",clickThree_a);
+buttonTwo.addEventListener("click",clickButtonTwo,true);
+three_b.addEventListener("click",clickThree_b);
+
+
+
+
+function clickButtonOne(event){
+
+console.log("The button One was clicked");
+//  event.stopPropagation();
+}
+
+function clickThree_a(){
+    console.log("Three_a was clicked");
+   
+}
+
+function clickButtonTwo(event1){
+
+console.log("The button Two was clicked");
+// event1.stopPropagation();
+}
+
+function clickThree_b(){
+    console.log("Three_b was clicked");
+    
+}
+
+
+
+</script>
+
+
+
+</html>
